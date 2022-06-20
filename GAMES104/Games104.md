@@ -152,53 +152,33 @@ Diffuse + Ambient + Specular = Blinn-Phong Reflection
 ### 基于微表面的 BRDF 模型 BRDF Model Based on Microfacet
 
 $$
-
 L_o(x,\omega_o) = L_e(x,\omega_o) + \int_{H^2} f_r(x,\omega_o,\omega_i) L_i(x,\omega_i) \cos \theta_i d \omega_i
-
 $$
 其中：
 $$
-
 f_r = k_d f_{Lambert} + f_{CookTorrance}
-
 $$
 其中：
 $$
-
 f_{Lambert} = \frac{c}{\pi} \qquad \text{漫反射 diffuse 部分}
-
 $$
 $$
-
 f_{CookTorrance} = \frac{DFG}{4(\omega_o \cdot n)(\omega_i \cdot n)} \qquad \text{高光 specular 部分}
-
 $$
 其中 D 为法向分布：
 $$
-
 NDF_{GGX}(n,h,\alpha)=\frac{\alpha^2}{\pi ((n \cdot h)^2(\alpha^2-1)+1)^2}, \quad \alpha \text{为材质的 roughness}
-
 $$
-
 G 为几何自遮挡：
-
 $$
-
 G_{Smith}(l,v)=G_{GGX}(l) \cdot G_{GGX}(v)
-
 $$
 $$
-
 G_{GGX}(v)=\frac{n \cdot v}{(n \cdot v)(1 - k) + k}, \quad k=\frac{(\alpha + 1)^2}{8}, \quad \alpha \text{为材质的 roughness}
-
 $$
-
 F 为菲涅尔方程：
-
 $$
-
 F_{Schlick}(h,v,F_0)=F_0+(1-F_0)(1-(v \cdot h))^5, \quad F_0\text{为菲涅尔系数}
-
 $$
 
 ### 常用的 BRDF 模型
