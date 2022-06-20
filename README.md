@@ -1,5 +1,8 @@
 # GAMES-Note
 
-Ridd 的 GAMES 课程笔记
+> [!info] 
+> Ridd 的 GAMES 课程笔记 My note on GAMES course
 
-My note on GAMES course
+
+
+[Games104](GAMES104/Games104.md)
