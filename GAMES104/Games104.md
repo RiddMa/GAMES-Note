@@ -51,9 +51,7 @@ Task shader 和 mesh shader，在 GPU 中生成新的几何面
 radiance——辐射光强，irradiance——入射光强
 
 $$
-
 L_o(x,\omega_o) = L_e(x,\omega_o) + \int_{H^2} f_r(x,\omega_o,\omega_i) L_i(x,\omega_i) \cos \theta_i d \omega_i
-
 $$
 
 $L_o$：出射光强，$x$：渲染物体表面一点，$\omega_o$：出射角
@@ -221,7 +219,7 @@ PBR + IBL
 
 Cascade shadow + VSSM
 
-↑5 年前的 3A 效果，可找工作（不是）
+⬆️ 5 年前的 3A 效果，可找工作（不是）
 
 ## 前沿高质量渲染技术
 
@@ -355,17 +353,14 @@ IEEE 754 Float 32bit 在实际游戏中大约只支持 2~3km 半径的坐标范�
 $$
 - \sigma_a L(x,\omega) \quad ,\sigma_a \text{为吸收系数}
 $$
-
 外散射 Out-scattering：
 $$
 - \sigma_s L(x,\omega) \quad ,\sigma_s \text{为散射系数}
 $$
-
 自发光 Emission：（不常用）
 $$
 \sigma_a L_e(x,\omega)
 $$
-
 内散射 In-scattering：
 $$
 \sigma_s \int_{S^2} f_p(x,\omega, \omega')L(x,\omega') d\omega' \quad ,f_p \text{为相位函数}
@@ -376,29 +371,21 @@ $$
 $$
 于是得到辐射转移方程：
 $$
-
 dL(x,\omega)/dx = -\sigma_t L(x,\omega) + \sigma_a L_e(x,\omega) + \sigma_s \int_{S^2} f_p(x,\omega, \omega')L(x,\omega') d\omega'
-
 $$
 
 ### 体积渲染方程 Volume Rendering Equation（VRE）
 
 对于不透明表面上的一点 $M$，光线以方向角 $\omega$经过体积传播至摄像机：
 $$
-
 L(P,\omega) = \int_{x=0}^d T(x)[\sigma_a L_e(x,\omega) + \sigma_s L_i(x,\omega) + T(M)L(M,\omega)]
-
 $$
 其中：
 $$
-
 T(x)=e^{-\int_x^P \sigma_t(s)ds} \quad ,\text{Transmittance(通透度)：吸收和外散射导致的光线净减少因子}
-
 $$
 $$
-
 L_i(x,\omega)= \int_{S^2} f_p(x,\omega, \omega')L(x,\omega') d\omega' \quad ,\text{内散射的净增加因子}
-
 $$
 
 ### 散射类型 Scattering Types
@@ -413,15 +400,11 @@ $$
 $$
 相位函数：
 $$
-
 F_{Rayleigh}(\theta)=\frac{3}{16\pi} (1+cos^2\theta)
-
 $$
 相乘化简，得到瑞利散射方程 Reyleigh Scattering Equation：
 $$
-
 S(\lambda,\theta,h)=\frac{\pi^2(n^2-1)^2}{2} \frac{\rho(h)}{N} \frac{1}{\lambda^4} (1+cos^2\theta)
-
 $$
 
 米氏散射 Mie Scattering
@@ -441,9 +424,7 @@ g>0 时为米氏散射，g<0 时光线更多向后散射，g=0 为瑞利散射
 思想：通过多次 Single Scattering 积分，计算空间中给定点的最终辐射度（radiance）
 
 $$
-
 L_{sun} \int_A^B S(\lambda,\theta,h) \cdot (T(\text{sun} \rightarrow P) + T(\text{sun} \rightarrow A))\text{d} s
-
 $$
 
 #### Precomputed Atmospheric Scattering
@@ -453,9 +434,7 @@ $$
 - Transmittance LUT，预计算通透度
 
 $$
-
 T(X_v \rightarrow X_m)=\frac{T(X_v \rightarrow B)}{T(X_m \rightarrow B)}
-
 $$
 
 ![Pasted image 20220616204323](attachments/Pasted%20image%2020220616204323.png)
@@ -803,14 +782,10 @@ Rendering G-Buffer（Albedo、Specular、Normals、Depth）-> Deferred Shading
 
 使用
 $$
-
 q=a+bi+cj+dk \quad ,a,b,c,d \in R
-
 $$
 $$
-
 i^2=j^2=k^2=ijk=-1
-
 $$
 表示。
 
