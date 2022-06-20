@@ -450,7 +450,7 @@ $$
 
 拟合方程，公式略 : (
 
-![[attachments/Pasted image 20220616150947.png]]
+![Pasted image 20220616150947](attachments/Pasted%20image%2020220616150947.png)
 
 g>0 时为米氏散射，g<0 时光线更多向后散射，g=0 为瑞利散射
 
@@ -478,16 +478,16 @@ T(X_v \rightarrow X_m)=\frac{T(X_v \rightarrow B)}{T(X_m \rightarrow B)}
 
 $$
 
-![[attachments/Pasted image 20220616204323.png]]
+![Pasted image 20220616204323](attachments/Pasted%20image%2020220616204323.png)
 
 - Single Scattering LUT，预计算单次散射结果
 	- 使用 3D Texture 存储 4D Table
 
-![[attachments/Pasted image 20220616204359.png]]
+![Pasted image 20220616204359](attachments/Pasted%20image%2020220616204359.png)
 
 - 使用 Transmittance LUT 和 Single Scattering LUT，多次计算得到 Multiple Scattering LUT
 
-![[attachments/Pasted image 20220616204604.png]]
+![Pasted image 20220616204604](attachments/Pasted%20image%2020220616204604.png)
 
 缺陷：
 - 预计算开销大
@@ -554,21 +554,21 @@ $$
 
 从摄像机对每个像素周围的小球体范围内进行随机采样，与深度图该像素对应深度比较，计算该点被遮挡程度。（很少用，算法有错）
 
-![[attachments/Pasted image 20220616223930.png]]
+![Pasted image 20220616223930](attachments/Pasted%20image%2020220616223930.png)
 
 ### SSAO+
 
 改进了 SSAO 算法错误，使用半球面采样
 
-![[attachments/Pasted image 20220616224000.png]]
+![Pasted image 20220616224000](attachments/Pasted%20image%2020220616224000.png)
 
 ### HBAO（Horizon-Based AO）
 
 思想：基于半球面的 Ray Marching 方法
 
-![[attachments/Pasted image 20220616224244.png]]
+![Pasted image 20220616224244](attachments/Pasted%20image%2020220616224244.png)
 
-![[attachments/Pasted image 20220616224417.png]]
+![Pasted image 20220616224417](attachments/Pasted%20image%2020220616224417.png)
 
 ### GTAO（GroundTruth-based AO）
 
@@ -578,9 +578,9 @@ $$
 - 效果非常好，接近 GT
 - AO 阴影支持颜色
 
-![[attachments/Pasted image 20220616224639.png]]
+![Pasted image 20220616224639](attachments/Pasted%20image%2020220616224639.png)
 
-![[attachments/Pasted image 20220616225122.png]]
+![Pasted image 20220616225122](attachments/Pasted%20image%2020220616225122.png)
 
 ### RTAO（Ray-Tracing AO）
 
@@ -599,17 +599,17 @@ $$
 
 根据浓度进行积分
 
-![[attachments/Pasted image 20220616225746.png]]
+![Pasted image 20220616225746](attachments/Pasted%20image%2020220616225746.png)
 
 ### 体积雾 Voxel-Based Volumetric Fog
 
 基于摄像机视锥的体素化
 
-![[attachments/Pasted image 20220616230134.png]]
+![Pasted image 20220616230134](attachments/Pasted%20image%2020220616230134.png)
 
 ## 反走样 Anti-Aliasing
 
-![[attachments/Pasted image 20220616231032.png]]
+![Pasted image 20220616231032](attachments/Pasted%20image%2020220616231032.png)
 
 ### SSAA（Super-Sample AA）和 MSAA（Multi-Sample AA）
 
@@ -631,21 +631,21 @@ MSAA：只超采必要的（物体边缘）的像素
 - Calculate Blend Coefficient，计算混合系数
 - Blend Nearby Pixels，混合相邻像素
 
-![[attachments/Pasted image 20220616231617.png]]
+![Pasted image 20220616231617](attachments/Pasted%20image%2020220616231617.png)
 
-![[attachments/Pasted image 20220616232234.png]]
+![Pasted image 20220616232234](attachments/Pasted%20image%2020220616232234.png)
 
-![[attachments/Pasted image 20220616232213.png]]
+![Pasted image 20220616232213](attachments/Pasted%20image%2020220616232213.png)
 
-![[attachments/Pasted image 20220616232004.png]]
+![Pasted image 20220616232004](attachments/Pasted%20image%2020220616232004.png)
 
-![[attachments/Pasted image 20220616232020.png]]
+![Pasted image 20220616232020](attachments/Pasted%20image%2020220616232020.png)
 
 ### TAA（Temporal Anti-Aliasing）
 
 基于运动向量 Motion Vector，混合当前帧与历史帧
 
-![[attachments/Pasted image 20220616232449.png]]
+![Pasted image 20220616232449](attachments/Pasted%20image%2020220616232449.png)
 
 ## 后处理 Post-Processing
 
@@ -655,11 +655,11 @@ MSAA：只超采必要的（物体边缘）的像素
 - 高斯模糊 Guassian Blur，对高光进行卷积运算
 - 金字塔运算 Pyramid Guassian Blur
 
-![[attachments/Pasted image 20220616233056.png]]
+![Pasted image 20220616233056](attachments/Pasted%20image%2020220616233056.png)
 
-![[attachments/Pasted image 20220616233227.png]]
+![Pasted image 20220616233227](attachments/Pasted%20image%2020220616233227.png)
 
-![[attachments/Pasted image 20220616233301.png]]
+![Pasted image 20220616233301](attachments/Pasted%20image%2020220616233301.png)
 
 ### Tone Mapping
 
@@ -667,7 +667,7 @@ MSAA：只超采必要的（物体边缘）的像素
 - 使用一条曝光曲线 Exposure Curve 映射像素亮度
 - 常用曲线：Filmic Curve、ACES（Academy Color Encoding System）
 
-![[attachments/Pasted image 20220616233747.png]]
+![Pasted image 20220616233747](attachments/Pasted%20image%2020220616233747.png)
 
 ### Color Grading
 
@@ -710,7 +710,7 @@ Rendering G-Buffer（Albedo、Specular、Normals、Depth）-> Deferred Shading
 
 虚幻 5 等引擎使用的前沿管线，基于现代游戏几何体远比材质复杂的事实出发
 
-![[attachments/Pasted image 20220617000251.png]]
+![Pasted image 20220617000251](attachments/Pasted%20image%2020220617000251.png)
 
 ## Frame Graph
 
@@ -806,11 +806,11 @@ Rendering G-Buffer（Albedo、Specular、Normals、Depth）-> Deferred Shading
 
 二维旋转矩阵：
 
-![[attachments/Pasted image 20220618162158.png]]
+![Pasted image 20220618162158](attachments/Pasted%20image%2020220618162158.png)
 
 欧拉角：将旋转拆分为三个轴上的旋转合成
 
-![[attachments/Pasted image 20220618163222.png]]
+![Pasted image 20220618163222](attachments/Pasted%20image%2020220618163222.png)
 
 欧拉角的缺陷
 - （矩阵乘法）不支持交换律，因此旋转的结果跟绕 xyz 轴旋转的顺序相关
@@ -836,21 +836,21 @@ $$
 
 四元数的定义：
 
-![[attachments/Pasted image 20220618164625.png]]
+![Pasted image 20220618164625](attachments/Pasted%20image%2020220618164625.png)
 
-![[attachments/Pasted image 20220618164952.png]]
+![Pasted image 20220618164952](attachments/Pasted%20image%2020220618164952.png)
 
 四元数转为旋转矩阵：
 
-![[attachments/Pasted image 20220618212738.png]]
+![Pasted image 20220618212738](attachments/Pasted%20image%2020220618212738.png)
 
 四元数的特性：
 
-![[attachments/Pasted image 20220618212839.png]]
+![Pasted image 20220618212839](attachments/Pasted%20image%2020220618212839.png)
 
 定轴的四元数旋转：
 
-![[attachments/Pasted image 20220618213210.png]]
+![Pasted image 20220618213210](attachments/Pasted%20image%2020220618213210.png)
 
 ### 关节姿态 Joint Pose
 
@@ -858,7 +858,7 @@ $$
 
 表示一个骨骼的变换数据：使用一个仿射变换矩阵（一个线性变换接上一个平移）表示
 
-![[attachments/Pasted image 20220618233401.png]]
+![Pasted image 20220618233401](attachments/Pasted%20image%2020220618233401.png)
 
 实际应用中，将最后一行的 $0,0,0,1$省略，存为 $3 \times 4$的矩阵
 
@@ -868,7 +868,7 @@ $$
 
 原因为局部坐标空间下的坐标插值方便计算，结果正确；而模型坐标空间下直接对关节姿态进行插值，会得到错误结果
 
-![[attachments/Pasted image 20220618234815.png]]
+![Pasted image 20220618234815](attachments/Pasted%20image%2020220618234815.png)
 
 ### 蒙皮矩阵 Skinning Matrix
 
@@ -876,7 +876,7 @@ $$
 
 **（TL;DR：由于 Vertex 与 Joint 相对位置不变，对 Vertex 相对 Joint 在模型空间中的坐标，应用 Joint 相对初始状态在模型空间中的变换，即得到 Vertex 相对初始状态在模型空间中的变换。Sknning Matrix 即为 t 时刻 Joint 相对初始状态在模型空间中的变换。）**
 
-![[attachments/Pasted image 20220618235129.png]]
+![Pasted image 20220618235129](attachments/Pasted%20image%2020220618235129.png)
 
 如何计算当前时刻 $t$，顶点 $V$在模型空间中的坐标：通过蒙皮变换矩阵 $K_j$得到：
 
@@ -885,13 +885,13 @@ $$
 - $V^m(t)$为顶点 $V$的模型空间坐标，由顶点 $V$的局部空间坐标 $V_j^l$作变换 $M_j^m(t)$得到
 - 于是，模型空间中顶点姿态绑定矩阵的逆，左乘模型空间中 $t$时刻关节变换矩阵，即为 Skinning Matrix
 
-![[attachments/Pasted image 20220618235622.png]]
+![Pasted image 20220618235622](attachments/Pasted%20image%2020220618235622.png)
 
 ### 蒙皮矩阵调色盘 Skinning Matrix Palette
 
 将所有顶点的 Skinning Matrix 再左乘模型空间到世界空间的变换矩阵，以数组存于显存
 
-![[attachments/Pasted image 20220619004122.png]]
+![Pasted image 20220619004122](attachments/Pasted%20image%2020220619004122.png)
 
 ### 多关节带权重的蒙皮 Weighted Skinning with Multi-Joints
 
@@ -902,13 +902,13 @@ $$
 - 顶点 V 绑定的 $N$个关节 J，分别计算顶点 V 经过 J 的姿态矩阵变换之后的模型空间坐标
 - 对得到的 $N$个模型空间坐标，**在模型空间下**加权平均，得到插值后的结果
 
-![[attachments/Pasted image 20220619004455.png]]
+![Pasted image 20220619004455](attachments/Pasted%20image%2020220619004455.png)
 
 ### 平移与缩放：简单插值 Simple Interpolation of Translation and Scale
 
 使用 LERP（Linear Interpolation）
 
-![[attachments/Pasted image 20220619005142.png]]
+![Pasted image 20220619005142](attachments/Pasted%20image%2020220619005142.png)
 
 ### 旋转：四元数插值 Quaternion Interpolation of Rotation
 
@@ -916,7 +916,7 @@ $$
 
 （图中浅蓝色线为 NLERP 插值结果）
 
-![[attachments/Pasted image 20220619005314.png]]
+![Pasted image 20220619005314](attachments/Pasted%20image%2020220619005314.png)
 
 ### 修复 NLERP 的最短路径问题 Shortest Path Fixing of NLERP
 
@@ -924,7 +924,7 @@ NLERP 默认使用最短路径旋转插值，无法得到转动大于 180 度的
 
 - 使用两个四元数点乘得到结果与 0 比较，可知需要插值的方向，进行修复
 
-![[attachments/Pasted image 20220619005808.png]]
+![Pasted image 20220619005808](attachments/Pasted%20image%2020220619005808.png)
 
 ### NLERP 的问题 Problem of NLERP
 
@@ -937,7 +937,7 @@ NLERP 插值得到的旋转角速度不恒定！
 - 旋转角度小时，浮点数精度不够，发生抖动
 - ↑也可能发生除以 0 异常
 
-![[attachments/Pasted image 20220619010133.png]]
+![Pasted image 20220619010133](attachments/Pasted%20image%2020220619010133.png)
 
 ### NLERP+SLERP Combined
 
@@ -945,7 +945,7 @@ NLERP 插值得到的旋转角速度不恒定！
 
 ### 简单的动画运行时管线 Simple Animation Runtime Pipeline
 
-![[attachments/Pasted image 20220619010508.png]]
+![Pasted image 20220619010508](attachments/Pasted%20image%2020220619010508.png)
 
 ## 动画压缩 Animation Compression
 
@@ -957,21 +957,21 @@ NLERP 插值得到的旋转角速度不恒定！
 
 Catmull-Rom Spline
 
-![[attachments/Pasted image 20220619011223.png]]
+![Pasted image 20220619011223](attachments/Pasted%20image%2020220619011223.png)
 
-![[attachments/Pasted image 20220619011428.png]]
+![Pasted image 20220619011428](attachments/Pasted%20image%2020220619011428.png)
 
 ### 浮点数压缩 Float Quantization
 
 可以根据实际对于动作数据精度的需求，使用小于 32bit 的数据存储四元数中的每个值
 
-![[attachments/Pasted image 20220619011652.png]]
+![Pasted image 20220619011652](attachments/Pasted%20image%2020220619011652.png)
 
 ### 四元数压缩 Quaternion Quantization
 
-![[attachments/Pasted image 20220619012013.png]]
+![Pasted image 20220619012013](attachments/Pasted%20image%2020220619012013.png)
 
-![[attachments/Pasted image 20220619012025.png]]
+![Pasted image 20220619012025](attachments/Pasted%20image%2020220619012025.png)
 
 ### 误差传播 Error Propagation
 
@@ -983,18 +983,18 @@ Catmull-Rom Spline
 
 使用两个线性无关的 Fake Vertex，定量衡量动画导致的误差
 
-![[attachments/Pasted image 20220619012928.png]]
+![Pasted image 20220619012928](attachments/Pasted%20image%2020220619012928.png)
 
 ### 误差补偿 Error Compensation
 
 自适应误差范围 Adaptive Error Margins：
 - 对精度要求不同的骨骼使用不同的 Error Threshold
 
-![[attachments/Pasted image 20220619013327.png]]
+![Pasted image 20220619013327](attachments/Pasted%20image%2020220619013327.png)
 
  原地补偿 In Place Correction：
 
- ![[attachments/Pasted image 20220619013413.png]]
+ ![Pasted image 20220619013413](attachments/Pasted%20image%2020220619013413.png)
 
 ## 动画资产的创作 Animation DCC
 
@@ -1034,30 +1034,30 @@ Catmull-Rom Spline
 
 状态转移条件可能很复杂
 
-![[attachments/Pasted image 20220619235325.png]]
+![Pasted image 20220619235325](attachments/Pasted%20image%2020220619235325.png)
 
 ### 状态转移过渡 Cross Fades
 
 - Smooth Transition：在两个播放的循环动画间均匀过渡，要求两个动画对轴
 - Frozen Transition：冻结当前动画帧，渐入目标动画（常用于跳跃、着地等动作突变的情况）
 
-![[attachments/Pasted image 20220620142527.png]]
+![Pasted image 20220620142527](attachments/Pasted%20image%2020220620142527.png)
 
 ### 过渡曲线 Cross Fade Curve
 
-![[attachments/Pasted image 20220620142735.png]]
+![Pasted image 20220620142735](attachments/Pasted%20image%2020220620142735.png)
 
 ### 分层动画状态机 Layered ASM
 
 传统经典设计：分层控制角色部分骨骼的运动（类似 Masked）
 
-![[attachments/Pasted image 20220620143045.png]]
+![Pasted image 20220620143045](attachments/Pasted%20image%2020220620143045.png)
 
 ### 动画树 Animation Blend Tree
 
 Animation Blend Tree 是 Layered ASM 的扩展：
 
-![[attachments/Pasted image 20220620143802.png]]
+![Pasted image 20220620143802](attachments/Pasted%20image%2020220620143802.png)
 
 动画树中的叶节点可以是动画片段 Clip、Blend Space、ASM；非叶节点可以是 LERP、Additive Blend
 
@@ -1065,18 +1065,18 @@ Animation Blend Tree 是 Layered ASM 的扩展：
 
 LERP Blend Node：
 
-![[attachments/Pasted image 20220620143652.png]]
+![Pasted image 20220620143652](attachments/Pasted%20image%2020220620143652.png)
 
 Additive Blend Node：
 
-![[attachments/Pasted image 20220620143741.png]]
+![Pasted image 20220620143741](attachments/Pasted%20image%2020220620143741.png)
 
 #### 控制参数 Control Parameters
 
 1. 使用变量 Variable，控制 LERP 结点的参数
 2. 使用事件 Event，切换动画树（或树内部 ASM）的状态（如持枪 ->拿刀）
 
-![[attachments/Pasted image 20220620144827.png]]
+![Pasted image 20220620144827](attachments/Pasted%20image%2020220620144827.png)
 
 ## 反向运动学 Inverse Kinematics（IK）
 
@@ -1094,7 +1094,7 @@ FK（Forward Kinematics）：使用运动学方程，从关节的姿态参数，
 
 通过解三角形即可得出三条边的向量表示，通过预定义的 Reference Vector 即可确定膝盖关节位置的唯一解
 
-![[attachments/Pasted image 20220620145717.png]]
+![Pasted image 20220620145717](attachments/Pasted%20image%2020220620145717.png)
 
 ### Multi-Joint IK Solving
 
@@ -1102,15 +1102,15 @@ FK（Forward Kinematics）：使用运动学方程，从关节的姿态参数，
 - 实时解高阶非线性方程
 - 可能有多组解、唯一解、无解
 
-![[attachments/Pasted image 20220620150400.png]]
+![Pasted image 20220620150400](attachments/Pasted%20image%2020220620150400.png)
 
 确认是否能够到目标 Check Reachability of Target：
 
-![[attachments/Pasted image 20220620150909.png]]
+![Pasted image 20220620150909](attachments/Pasted%20image%2020220620150909.png)
 
 关节的限制 Constraints of Joint
 
-![[attachments/Pasted image 20220620151042.png]]
+![Pasted image 20220620151042](attachments/Pasted%20image%2020220620151042.png)
 
 ### 启发式算法 Heuristics Algorithm
 
@@ -1120,29 +1120,29 @@ FK（Forward Kinematics）：使用运动学方程，从关节的姿态参数，
 - Rechability：在若干次迭代后停止，可得到尽可能接近目标的结果
 - Constraints：在计算时允许角度限制 Angular Limit
 
-![[attachments/Pasted image 20220620151354.png]]
+![Pasted image 20220620151354](attachments/Pasted%20image%2020220620151354.png)
 
 #### Optimized CCD：加入一个逐渐缩小的 Tolerance
 
-![[attachments/Pasted image 20220620151900.png]]
+![Pasted image 20220620151900](attachments/Pasted%20image%2020220620151900.png)
 
-![[attachments/Pasted image 20220620151925.png]]
+![Pasted image 20220620151925](attachments/Pasted%20image%2020220620151925.png)
 
 #### FABRIK（Forward And Backward Reaching Inverse Kinematics）
 
-![[attachments/Pasted image 20220620152254.png]]
+![Pasted image 20220620152254](attachments/Pasted%20image%2020220620152254.png)
 
-![[attachments/Pasted image 20220620152356.png]]
+![Pasted image 20220620152356](attachments/Pasted%20image%2020220620152356.png)
 
 ### 多个末端作用器 Multiple End-Effectors
 
-![[attachments/Pasted image 20220620152549.png]]
+![Pasted image 20220620152549](attachments/Pasted%20image%2020220620152549.png)
 
-![[attachments/Pasted image 20220620152647.png]]
+![Pasted image 20220620152647](attachments/Pasted%20image%2020220620152647.png)
 
-![[attachments/Pasted image 20220620153310.png]]
+![Pasted image 20220620153310](attachments/Pasted%20image%2020220620153310.png)
 
-![[attachments/Pasted image 20220620153652.png]]
+![Pasted image 20220620153652](attachments/Pasted%20image%2020220620153652.png)
 
 ### 其他 IK 解决方案 Other IK Solutions
 
@@ -1167,19 +1167,19 @@ XPBD（Extended PBD）：虚幻五演示全身 IK（FBIK）
 
 ### 带有混合和 IK 的动画管线 Updated Animation Pipeline with Blending and IK
 
-[[Games104#简单的动画运行时管线 Simple Animation Runtime Pipeline]]：
+[](Games104.md#%E7%AE%80%E5%8D%95%E7%9A%84%E5%8A%A8%E7%94%BB%E8%BF%90%E8%A1%8C%E6%97%B6%E7%AE%A1%E7%BA%BF%20Simple%20Animation%20Runtime%20Pipeline)：
 
-![[attachments/Pasted image 20220619010508.png]]
+![Pasted image 20220619010508](attachments/Pasted%20image%2020220619010508.png)
 
 ↓↓↓升级后↓↓↓
 
-![[attachments/Pasted image 20220620154829.png]]
+![Pasted image 20220620154829](attachments/Pasted%20image%2020220620154829.png)
 
 ## 动画图 Animation Graph
 
 ## 面部动画 Facial Animation
 
-![[attachments/Pasted image 20220620155612.png]]
+![Pasted image 20220620155612](attachments/Pasted%20image%2020220620155612.png)
 
 ### FACS（Facial Action Coding System）
 
@@ -1187,31 +1187,31 @@ XPBD（Extended PBD）：虚幻五演示全身 IK（FBIK）
 
 <<https://www.paulekman.com/facial-action-coding-system/>>
 
-![[attachments/Pasted image 20220620155904.png]]
+![Pasted image 20220620155904](attachments/Pasted%20image%2020220620155904.png)
 
 ### Action Units Combination
 
 表情可以被表示为 AU 的组合
 
-![[attachments/Pasted image 20220620160344.png]]
+![Pasted image 20220620160344](attachments/Pasted%20image%2020220620160344.png)
 
 ### 28 Core Action Units
 
 Apple 总结了 28 个最常用的核心动作单元 Core Action Units，其中有 23 个对称的
 
-![[attachments/Pasted image 20220620235913.png]]
+![Pasted image 20220620235913](attachments/Pasted%20image%2020220620235913.png)
 
 ### Key Pose Blending
 
 - FACS in Morph Target Animation：对于每个表情，存储顶点与自然状态下的差值，使用 Additive Blending
 
-![[attachments/Pasted image 20220621001215.png]]
+![Pasted image 20220621001215](attachments/Pasted%20image%2020220621001215.png)
 
 ### 面部骨骼 Facial Skeleton
 
 用于控制眼球、下巴等整体运动的面部部分。调整骨骼位置、旋转、缩放即可改变脸部蒙皮，可用于捏脸系统
 
-![[attachments/Pasted image 20220621001153.png]]
+![Pasted image 20220621001153](attachments/Pasted%20image%2020220621001153.png)
 
 ### 纹理动画 UV Texture Facial Animation
 
@@ -1222,7 +1222,7 @@ Apple 总结了 28 个最常用的核心动作单元 Core Action Units，其中�
 
 目前属于前沿探索领域
 
-![[attachments/Pasted image 20220621001421.png]]
+![Pasted image 20220621001421](attachments/Pasted%20image%2020220621001421.png)
 
 ## 重定向 Retargeting
 
@@ -1241,7 +1241,7 @@ Apple 总结了 28 个最常用的核心动作单元 Core Action Units，其中�
 
 对于骨骼位移，记录位移距离相对骨骼长度的比例，进行等比缩放
 
-![[attachments/Pasted image 20220621002637.png]]
+![Pasted image 20220621002637](attachments/Pasted%20image%2020220621002637.png)
 
 ### IK in Retargeting
 
@@ -1249,14 +1249,14 @@ Apple 总结了 28 个最常用的核心动作单元 Core Action Units，其中�
 
 需要移动 Pelvis 并使用 IK 将 End-Effector 固定在合适的位置
 
-![[attachments/Pasted image 20220621002852.png]]
+![Pasted image 20220621002852](attachments/Pasted%20image%2020220621002852.png)
 
 ### 重定向不同的骨骼结构 Retargeting with Different Skeleton Hierarchy
 
 1. 用骨骼名称识别可以对应的骨骼
 2. 对于不能对应的骨骼，采用右图方法使得不对应段尽可能贴合原动画，并且首位位置能衔接上其它对应的骨骼
 
-![[attachments/Pasted image 20220621003045.png]]
+![Pasted image 20220621003045](attachments/Pasted%20image%2020220621003045.png)
 
 ### 没有解决的问题 Unresolved Problems of Retargeting
 
@@ -1264,14 +1264,14 @@ Apple 总结了 28 个最常用的核心动作单元 Core Action Units，其中�
 - 自接触等语义化动作（鼓掌时手掌无法接触）
 - 不同角色的动画体态平衡性
 
-![[attachments/Pasted image 20220621003406.png]]
+![Pasted image 20220621003406](attachments/Pasted%20image%2020220621003406.png)
 
 ### Morph Animation Retargeting Problem
 
 不同脸型的角色播放 Morph Target Animation 动画也会出现眼皮无法完全合上等问题
 - 采用移动目标顶点 + 拉普拉斯算子平滑周围顶点的方法（略）
 
-![[attachments/Pasted image 20220621003824.png]]
+![Pasted image 20220621003824](attachments/Pasted%20image%2020220621003824.png)
 
 # 游戏引擎中物理系统的基础理论和算法
 
