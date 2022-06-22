@@ -1236,7 +1236,7 @@ Apple 总结了 28 个最常用的核心动作单元 Core Action Units，其中�
 
 # 游戏引擎中物理系统的基础理论和算法
 
-## 基础概念 Basic Concepts
+## 物理对象与形状
 
 ### Actor 分类
 
@@ -1263,6 +1263,22 @@ Apple 总结了 28 个最常用的核心动作单元 Core Action Units，其中�
 - 质量和密度 Mass and Density
 - 质心 Center of Mass
 - 摩擦力和弹性 Friction&Restitution
+
+## 力与运动
+
+### 力 Force
+
+- 重力
+- 拉力
+- 摩擦力
+
+### 冲量 Impulse
+
+模拟爆炸等效果
+
+### 运动Movement
+
+
 
 # 游戏引擎物理系统的高级应用
 
