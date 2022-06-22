@@ -1254,9 +1254,15 @@ Apple 总结了 28 个最常用的核心动作单元 Core Action Units，其中�
 - 三角网格体 Triangle Mesh：最慢，最精确
 - 高程图 Height Field：用于地形
 
+在引擎的物理系统中，使用 Physics Shapes 包裹物体，形成一个 Actor。注意使用尽可能简单的 Actor Shape 类型
+
 ![](attachments/Pasted%20image%2020220623011456.png)
 
-### 使用物理性状包裹物体Wrap Objects with Physics Shapes
+### Shape Properties
+
+- 质量和密度 Mass and Density
+- 质心 Center of Mass
+- 摩擦力和弹性 Friction&Restitution
 
 # 游戏引擎物理系统的高级应用
 
