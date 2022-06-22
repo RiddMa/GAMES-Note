@@ -1283,6 +1283,8 @@ Apple 总结了 28 个最常用的核心动作单元 Core Action Units，其中�
 没有外力时：
 $$
 \vec{v}(t+\Delta t) = \vec{v}(t) \\
+$$
+$$
 \vec{x}(t+\Delta x) = \vec{x}(t) + \vec{v}(t) \Delta t
 $$
 
@@ -1292,11 +1294,18 @@ $$
 \vec{F} = m \vec{a}
 $$
 $$
-\vec{a}(t) = \frac{\text{d}}
+\vec{a}(t) = \frac{\text{d} \vec{v}(t)}{\text{d} t} = \frac{\text{d}^2 \vec{x}(t)}{\text{d} t^2}
 $$
 $$
-\vec{v}(t+\Delta t) = \vec{v}(t) \\
-\vec{x}(t+\Delta x) = \vec{x}(t) + \vec{v}(t) \Delta t
+\vec{v}(t+\Delta t) = \vec{v}(t) + \vec{a}(t)\Delta t\\
+$$
+$$
+\vec{x}(t+\Delta x) = \vec{x}(t) + \vec{v}(t) \Delta t + \frac{1}{2} \vec{a}(t)\Delta t^2
+$$
+
+变加速度情况下：
+$$
+
 $$
 
 牛顿第三定律 Newton's 3rd Law of Motion
