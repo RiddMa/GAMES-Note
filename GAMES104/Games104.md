@@ -139,7 +139,7 @@ Diffuse + Ambient + Specular = Blinn-Phong Reflection
 
 缺点：
 - 大量的 SH 光照探针，需要预计算
-- 采样稀疏，无法处理 GI 的精细细节，如软引用和重叠几何结构
+- 采样稀疏，无法处理 GI 的精细细节，如软阴影和重叠几何结构
 
 ## 基于物理的材质 Physical-Based Material
 
@@ -154,7 +154,9 @@ L_o(x,\omega_o) = L_e(x,\omega_o) + \int_{H^2} f_r(x,\omega_o,\omega_i) L_i(x,\o
 $$
 其中：
 $$
+\begin{aligned}
 f_r = k_d f_{Lambert} + f_{CookTorrance}
+\end{aligned}
 $$
 其中：
 $$
@@ -1244,7 +1246,7 @@ Apple 总结了 28 个最常用的核心动作单元 Core Action Units，其中�
 - 球体 Sphere：Origin
 - 胶囊体 Capsule
 - 长方体 Box
-- Convex Mesh
+- 凸包多面体 Convex Hull：
 - Triangle Mesh
 - Height Field
 
