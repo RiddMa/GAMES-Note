@@ -1276,9 +1276,30 @@ Apple 总结了 28 个最常用的核心动作单元 Core Action Units，其中�
 
 模拟爆炸等效果
 
-### 运动Movement
+### 运动 Movement
 
+#### 牛顿第一定律 Newton's 1st Law of Motion
 
+没有外力时：
+$$
+\vec{v}(t+\Delta t) = \vec{v}(t) \\
+\vec{x}(t+\Delta x) = \vec{x}(t) + \vec{v}(t) \Delta t
+$$
+
+#### 牛顿第二定律 Newton's 2nd Law of Motion
+
+$$
+\vec{F} = m \vec{a}
+$$
+$$
+\vec{a}(t) = \frac{\text{d}}
+$$
+$$
+\vec{v}(t+\Delta t) = \vec{v}(t) \\
+\vec{x}(t+\Delta x) = \vec{x}(t) + \vec{v}(t) \Delta t
+$$
+
+牛顿第三定律 Newton's 3rd Law of Motion
 
 # 游戏引擎物理系统的高级应用
 
