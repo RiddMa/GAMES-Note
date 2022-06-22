@@ -1309,11 +1309,17 @@ $$
 
 ![](attachments/Pasted%20image%2020220623014912.png)
 
-存在的问题：能量不守恒（误差不收敛），无法正确模拟圆周运动
+特点：能量不守恒（误差不收敛），会爆炸，无法正确模拟圆周运动
 
 ### 隐式欧拉法
 
+![](attachments/Pasted%20image%2020220623015340.png)
 
+特点：能量保守，运动会衰减
+
+### 半隐式欧拉法
+
+![](attachments/Pasted%20image%2020220623015800.png)
 
 牛顿第三定律 Newton's 3rd Law of Motion
 
