@@ -1303,10 +1303,17 @@ $$
 \vec{x}(t+\Delta x) = \vec{x}(t) + \vec{v}(t) \Delta t + \frac{1}{2} \vec{a}(t)\Delta t^2
 $$
 
-变加速度情况下：
-$$
+#### 显式欧拉法
 
-$$
+用当前状态预测未来状态进行积分
+
+![](attachments/Pasted%20image%2020220623014912.png)
+
+存在的问题：能量不守恒（误差不收敛），无法正确模拟圆周运动
+
+### 隐式欧拉法
+
+
 
 牛顿第三定律 Newton's 3rd Law of Motion
 
