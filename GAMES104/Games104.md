@@ -150,7 +150,9 @@ Diffuse + Ambient + Specular = Blinn-Phong Reflection
 ### 基于微表面的 BRDF 模型 BRDF Model Based on Microfacet
 
 $$
+\begin{aligned}
 L_o(x,\omega_o) = L_e(x,\omega_o) + \int_{H^2} f_r(x,\omega_o,\omega_i) L_i(x,\omega_i) \cos \theta_i d \omega_i
+\end{aligned}
 $$
 其中：
 $$
@@ -160,7 +162,9 @@ f_r = k_d f_{Lambert} + f_{CookTorrance}
 $$
 其中：
 $$
+\begin{aligned}
 f_{Lambert} = \frac{c}{\pi} \qquad \text{漫反射 diffuse 部分}
+\end{aligned}
 $$
 $$
 f_{CookTorrance} = \frac{DFG}{4(\omega_o \cdot n)(\omega_i \cdot n)} \qquad \text{高光 specular 部分}
@@ -1246,9 +1250,9 @@ Apple 总结了 28 个最常用的核心动作单元 Core Action Units，其中�
 - 球体 Sphere：Origin
 - 胶囊体 Capsule
 - 长方体 Box
-- 凸包多面体 Convex Hull：
-- Triangle Mesh
-- Height Field
+- 凸包多面体 Convex Mesh：
+- 三角网格体 Triangle Mesh：
+- 高程图 Height Field：
 
 # 游戏引擎物理系统的高级应用
 
