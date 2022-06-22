@@ -1247,12 +1247,14 @@ Apple 总结了 28 个最常用的核心动作单元 Core Action Units，其中�
 
 ### Actor Shapes
 
-- 球体 Sphere：Origin
-- 胶囊体 Capsule
+- 球体 Sphere：点 + 半径，计算最简单
+- 胶囊体 Capsule：球的扩展，常用于人形 Actor
 - 长方体 Box
-- 凸包多面体 Convex Mesh：
-- 三角网格体 Triangle Mesh：
-- 高程图 Height Field：
+- 凸包多面体 Convex Mesh：只支持凸多面体，在复杂几何体中较为快速
+- 三角网格体 Triangle Mesh：最慢，最精确
+- 高程图 Height Field：用于地形
+
+![](attachments/Pasted%20image%2020220623011456.png)
 
 # 游戏引擎物理系统的高级应用
 
