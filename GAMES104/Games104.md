@@ -1232,12 +1232,21 @@ Apple 总结了 28 个最常用的核心动作单元 Core Action Units，其中�
 
 ## 基础概念 Basic Concepts
 
-### Actor
+### Actor 分类
 
-- 静态 Static
-- 动态 Dynamic：
-- 触发器 Trigger：与 Static 类似，但没有碰撞。在其他 Actor 进入或离开 Trigger 时会产生 Event
--
+- 静态 Static：不能移动，具有碰撞（场景物体）
+- 动态 Dynamic：遵循牛顿运动定律
+- 触发器 Trigger：与 Static Actor 类似，但没有碰撞。在其他 Actor 进入或离开 Trigger 时会产生 Event
+- 运动学 Kinematic：不遵循牛顿运动定律（由 Gameplay Logic 控制的强制移动）
+
+### Actor Shapes
+
+- 球体 Sphere：Origin
+- 胶囊体 Capsule
+- 长方体 Box
+- Convex Mesh
+- Triangle Mesh
+- Height Field
 
 # 游戏引擎物理系统的高级应用
 
