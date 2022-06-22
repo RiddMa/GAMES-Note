@@ -1230,6 +1230,15 @@ Apple 总结了 28 个最常用的核心动作单元 Core Action Units，其中�
 
 # 游戏引擎中物理系统的基础理论和算法
 
+## 基础概念 Basic Concepts
+
+### Actor
+
+- 静态 Static
+- 动态 Dynamic：
+- 触发器 Trigger：与 Static 类似，但没有碰撞。在其他 Actor 进入或离开 Trigger 时会产生 Event
+-
+
 # 游戏引擎物理系统的高级应用
 
 # 游戏引擎中的粒子和声效系统
