@@ -1427,7 +1427,7 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 
 ![](attachments/Pasted%20image%2020220624025901.png)
 
-计算
+计算闵可夫斯基差形成的凸包是否包含原点：GJK 迭代算法
 
 ![](attachments/Pasted%20image%2020220624030313.png)
 
