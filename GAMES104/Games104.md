@@ -1394,6 +1394,20 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 - 使用精细碰撞体检测碰撞
 - 生成碰撞接触信息
 
+![](attachments/Pasted%20image%2020220624024608.png)
+
+基础形状求交测试 Basic Shape Intersection Test
+
+![](attachments/Pasted%20image%2020220624024745.png)
+
+![](attachments/Pasted%20image%2020220624024807.png)
+
+
+
+闵可夫斯基Minkowski Difference-Based Methods
+
+Seperating Axis Theorem
+
 # 游戏引擎物理系统的高级应用
 
 # 游戏引擎中的粒子和声效系统
