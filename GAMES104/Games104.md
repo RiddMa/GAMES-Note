@@ -1379,15 +1379,15 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 
 两种实现方法：
 - 空间划分 Boundary Volume Hierarchy（BVH）Tree
-- 排序并扫描 Sort and Sweep
+- 排序并移动 Sort and Sweep
 
 ![](attachments/Pasted%20image%2020220624023755.png)
 
 ![](attachments/Pasted%20image%2020220624023813.png)
 
+![](attachments/Pasted%20image%2020220624023827.png)
 
-
-
+![](attachments/Pasted%20image%2020220624023849.png)
 
 #### 细筛 Narrow Phase
 
