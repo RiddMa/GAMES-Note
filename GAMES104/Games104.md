@@ -1405,13 +1405,13 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 
 ![](attachments/Pasted%20image%2020220624024826.png)
 
-#### 闵可夫斯基 Minkowski Difference-Based Methods
+#### 基于闵可夫斯基差的方法 Minkowski Difference-Based Methods
 
 闵可夫斯基和：
 
 ![](attachments/Pasted%20image%2020220624025057.png)
 
-
+闵可夫斯基和：
 
 ![](attachments/Pasted%20image%2020220624025428.png)
 
@@ -1422,6 +1422,14 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 闵可夫斯基差：
 
 ![](attachments/Pasted%20image%2020220624025803.png)
+
+若两个凸包的闵可夫斯基差得到的凸包包含原点，则这两个凸包相交
+
+![](attachments/Pasted%20image%2020220624025901.png)
+
+计算
+
+![](attachments/Pasted%20image%2020220624030313.png)
 
 Seperating Axis Theorem
 
