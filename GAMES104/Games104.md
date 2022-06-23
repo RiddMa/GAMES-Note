@@ -1347,7 +1347,13 @@ $$
 
 ![](attachments/Pasted%20image%2020220624020212.png)
 
+### 转动惯量 Rotational Inertia - $I$
 
+$$
+I = R \cdot I_0 \cdot R^T
+$$
+
+![](attachments/Pasted%20image%2020220624021313.png)
 
 # 游戏引擎物理系统的高级应用
 
