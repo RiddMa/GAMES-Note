@@ -1339,6 +1339,14 @@ $$
 
 上节运动学中把物体假设为质点。然而在刚体动力学中，物体具有形状、朝向、角速度、角加速度、角动量、力矩、惯性等属性
 
+### 朝向 Orientation - $R$
+
+![](attachments/Pasted%20image%2020220624020007.png)
+
+### 角速度 Angular Velocity - $\vec{\omega}$
+
+![](attachments/Pasted%20image%2020220624020212.png)
+
 # 游戏引擎物理系统的高级应用
 
 # 游戏引擎中的粒子和声效系统
