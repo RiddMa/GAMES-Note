@@ -1369,9 +1369,9 @@ $$
 
 ## 碰撞检测 Collision Detection
 
-### 两段检测 Two Phases
+一般使用 两段检测 Two Phases
 
-#### 初筛 Broad Phase
+### 初筛 Broad Phase
 
 AABB 碰撞盒（Axis-Aligned Bounding Box）：
 - 寻找重叠的 AABB 碰撞盒
@@ -1389,22 +1389,29 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 
 ![](attachments/Pasted%20image%2020220624023849.png)
 
-#### 细筛 Narrow Phase
+### 细筛 Narrow Phase
 
+目标：
 - 使用精细碰撞体检测碰撞
-- 生成碰撞接触信息
+- 生成碰撞接触信息，包括接触点、穿透深度、接触法向等等
 
 ![](attachments/Pasted%20image%2020220624024608.png)
 
-基础形状求交测试 Basic Shape Intersection Test
+#### 基础形状求交测试 Basic Shape Intersection Test
 
 ![](attachments/Pasted%20image%2020220624024745.png)
 
 ![](attachments/Pasted%20image%2020220624024807.png)
 
+![](attachments/Pasted%20image%2020220624024826.png)
+
+#### 闵可夫斯基 Minkowski Difference-Based Methods
+
+闵可夫斯基和：
+
+![](attachments/Pasted%20image%2020220624025057.png)
 
 
-闵可夫斯基Minkowski Difference-Based Methods
 
 Seperating Axis Theorem
 
