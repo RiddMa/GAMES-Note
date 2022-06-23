@@ -1355,6 +1355,14 @@ $$
 
 ![](attachments/Pasted%20image%2020220624021313.png)
 
+### 力矩 Torque - $\vec{\tau}$
+
+![](attachments/Pasted%20image%2020220624021543.png)
+
+### 总结 Summary
+
+![](attachments/Pasted%20image%2020220624021611.png)
+
 # 游戏引擎物理系统的高级应用
 
 # 游戏引擎中的粒子和声效系统
