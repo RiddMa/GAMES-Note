@@ -1363,6 +1363,10 @@ $$
 
 ![](attachments/Pasted%20image%2020220624021611.png)
 
+### 应用：桌球 Application - Billiard Dynamics
+
+![](attachments/Pasted%20image%2020220624022020.png)
+
 # 游戏引擎物理系统的高级应用
 
 # 游戏引擎中的粒子和声效系统
