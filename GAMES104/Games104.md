@@ -1413,6 +1413,16 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 
 
 
+![](attachments/Pasted%20image%2020220624025428.png)
+
+对于两个凸包，他们的闵可夫斯基和依然是一个凸包
+
+![](attachments/Pasted%20image%2020220624025529.png)
+
+闵可夫斯基差：
+
+![](attachments/Pasted%20image%2020220624025803.png)
+
 Seperating Axis Theorem
 
 # 游戏引擎物理系统的高级应用
