@@ -1371,15 +1371,28 @@ $$
 
 ### 两段检测 Two Phases
 
-- 初筛 Broad Phase：AABB 碰撞盒（Axis-Aligned Bounding Box）
-	- 寻找重叠的 AABB 碰撞盒
-	- 寻找具有重叠可能的 AABB 碰撞盒
-	- 两种实现方法：
-		- 空间划分 Boundary Volume Hierarchy（BVH）Tree
-		- 排序并扫描 Sort and Sweep
-- 细筛 Narrow Phase
-	- 使用精细碰撞体检测碰撞
-	- 生成碰撞接触信息
+#### 初筛 Broad Phase
+
+AABB 碰撞盒（Axis-Aligned Bounding Box）：
+- 寻找重叠的 AABB 碰撞盒
+- 寻找具有重叠可能的 AABB 碰撞盒
+
+两种实现方法：
+- 空间划分 Boundary Volume Hierarchy（BVH）Tree
+- 排序并扫描 Sort and Sweep
+
+![](attachments/Pasted%20image%2020220624023755.png)
+
+![](attachments/Pasted%20image%2020220624023813.png)
+
+
+
+
+
+#### 细筛 Narrow Phase
+
+- 使用精细碰撞体检测碰撞
+- 生成碰撞接触信息
 
 # 游戏引擎物理系统的高级应用
 
