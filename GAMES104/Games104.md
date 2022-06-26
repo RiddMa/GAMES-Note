@@ -1488,7 +1488,17 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 
 ![](attachments/Pasted%20image%2020220626173826.png)
 
-## Efficiency、Accuracy、
+## 效率、准确性、确定性 Efficiency、Accuracy、Determinism
+
+### 模拟优化：分组与睡眠 Simulation Optimization - Island and Sleeping
+
+把物理世界按照坐标区域分成一个个组，避免与距离过远的物体进行无意义的运算。对于物理模拟结果较为稳定的组（物体运动速度小于一定阈值），将其睡眠不参与计算。
+
+![](attachments/Pasted%20image%2020220626174059.png)
+
+![](attachments/Pasted%20image%2020220626174211.png)
+
+### Continuous Collision Detection（CCD)
 
 # 游戏引擎物理系统的高级应用
 
