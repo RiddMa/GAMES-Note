@@ -1472,7 +1472,7 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 
 ### 横扫 Sweep
 
-将一个基本形体（Sphere，Capsule，Box，Convex）沿着一条射线移动，检测命中
+将一个基本形体（Sphere，Capsule，Box）沿着一条射线移动，检测命中
 
 ![](attachments/Pasted%20image%2020220626173242.png)
 
@@ -1498,7 +1498,7 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 
 ![](attachments/Pasted%20image%2020220626174211.png)
 
-### Continuous Collision Detection（CCD)
+### Continuous Collision Detection（CCD）
 
 # 游戏引擎物理系统的高级应用
 
