@@ -1478,7 +1478,17 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 
 ### 重叠 Overlap
 
+检测哪些 Actor 与当前碰撞体重叠（走到固定点触发剧情、手雷爆炸效果时很有用）
 
+![](attachments/Pasted%20image%2020220626173508.png)
+
+## 碰撞组 Collision Group
+
+将物理 Actor 进行分组，从而实现过滤分组结果、触发器等功能
+
+![](attachments/Pasted%20image%2020220626173826.png)
+
+## Efficiency、Accuracy、
 
 # 游戏引擎物理系统的高级应用
 
