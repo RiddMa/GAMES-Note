@@ -1439,6 +1439,25 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 
 ![](attachments/Pasted%20image%2020220626171243.png)
 
+## 碰撞解算 Solving Collision
+
+### 惩罚力 Penalty Force
+
+对相互碰撞交叠的物体施加一个惩罚力，使其分开
+
+- 现在很少使用
+- 容易导致爆炸效果
+
+### 拉格朗日力学
+
+通过解算约束条件得到
+
+![](attachments/Pasted%20image%2020220626172134.png)
+
+### Solving Velocity Constraints
+
+![](attachments/Pasted%20image%2020220626172243.png)
+
 # 游戏引擎物理系统的高级应用
 
 # 游戏引擎中的粒子和声效系统
