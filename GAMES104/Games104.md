@@ -1500,13 +1500,23 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 
 ### Continuous Collision Detection（CCD）
 
-在高速移动的Actor遇到较薄的障碍物时，可能产生遂穿Tunneling效果，碰撞检测不到
+在高速移动的 Actor 遇到较薄的障碍物时，可能产生遂穿 Tunneling 效果，碰撞检测不到
 
 ![](attachments/Pasted%20image%2020220626195827.png)
 
 解决方法：可以增厚障碍物
 
 ![](attachments/Pasted%20image%2020220626195839.png)
+
+TOI：距离障碍物越近，使用越细的步长进行物理模拟
+
+![](attachments/Pasted%20image%2020220626195924.png)
+
+## 确定性模拟Deterministic Simulation
+
+为了在完全相同的输入下
+
+![](attachments/Pasted%20image%2020220626200258.png)
 
 # 游戏引擎物理系统的高级应用
 
