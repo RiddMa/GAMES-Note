@@ -1433,7 +1433,11 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 
 #### 分离轴理论 Seperating Axis Theorem
 
+![](attachments/Pasted%20image%2020220626171207.png)
 
+![](attachments/Pasted%20image%2020220626171200.png)
+
+![](attachments/Pasted%20image%2020220626171243.png)
 
 # 游戏引擎物理系统的高级应用
 
