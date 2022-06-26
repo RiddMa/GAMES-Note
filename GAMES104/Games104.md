@@ -1460,7 +1460,25 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 
 ## 场景查询 Scene Query
 
-### Ray Cast
+### 射线检测 Ray Cast
+
+![](attachments/Pasted%20image%2020220626173007.png)
+
+- Multiple hits：返回所有射线命中结果
+- Closest hit：返回距离最近的射线命中结果（A）
+- Any hit：返回任意命中结果（A 或 B 或 C），速度最快
+
+![](attachments/Pasted%20image%2020220626173020.png)
+
+### 横扫 Sweep
+
+将一个基本形体（Sphere，Capsule，Box，Convex）沿着一条射线移动，检测命中
+
+![](attachments/Pasted%20image%2020220626173242.png)
+
+### 重叠 Overlap
+
+
 
 # 游戏引擎物理系统的高级应用
 
