@@ -1448,15 +1448,19 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 - 现在很少使用
 - 容易导致爆炸效果
 
-### 拉格朗日力学
+### 通过拉格朗日力学解算约束 Solving Velocity Constraints
 
-通过解算约束条件得到
+通过解算约束条件得到物体下一时刻的速度和位置向量
 
-![](attachments/Pasted%20image%2020220626172134.png)
+![](attachments/Pasted%20image%2020220626172609.png)
 
-### Solving Velocity Constraints
+现代物理引擎常用：高斯 - 赛德尔方法 Gauss-Seidel Method
 
 ![](attachments/Pasted%20image%2020220626172243.png)
+
+## 场景查询 Scene Query
+
+### Ray Cast
 
 # 游戏引擎物理系统的高级应用
 
