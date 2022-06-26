@@ -1492,7 +1492,7 @@ AABB 碰撞盒（Axis-Aligned Bounding Box）：
 
 ### 模拟优化：分组与睡眠 Simulation Optimization - Island and Sleeping
 
-把物理世界按照坐标区域分成一个个组，避免与距离过远的物体进行无意义的运算。对于物理模拟结果较为稳定的组（物体运动速度小于一定阈值），将其睡眠不参与计算。
+把物理世界按照坐标区域分成一个个组，避免与距离过远的物体进行无意义的运算。对于物理模拟结果较为稳定的组（物体运动速度小于一定阈值），将其睡眠不参与计算
 
 ![](attachments/Pasted%20image%2020220626174059.png)
 
@@ -1512,11 +1512,13 @@ TOI：距离障碍物越近，使用越细的步长进行物理模拟
 
 ![](attachments/Pasted%20image%2020220626195924.png)
 
-## 确定性模拟Deterministic Simulation
+## 确定性模拟 Deterministic Simulation
 
-为了在完全相同的输入下
+为了在完全相同的输入下得到完全一样的物理模拟结果，需要实现确定性模拟
 
 ![](attachments/Pasted%20image%2020220626200258.png)
+
+现在依然是非常难以解决的问题！
 
 # 游戏引擎物理系统的高级应用
 
