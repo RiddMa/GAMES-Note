@@ -1584,15 +1584,30 @@ TOI：距离障碍物越近，使用越细的步长进行物理模拟
 - 无法与环境交互
 - 衣服的设计受骨骼限制
 
-### Rigid Body-Based Cloth Simulation
+### 基于刚体的布料模拟 Rigid Body-Based Cloth Simulation
 
 管线：
 - 将布料骨骼绑定到刚体上，设定约束
 - 使用物理解算刚体，驱动骨骼，从而驱动布料
 
 优点：
-- 比纯模拟
+- 相对便宜（只需要解算几个刚体碰撞）
+- 可交互
 
+缺点：
+- 模拟质量不可预测
+- 鲁棒性低
+- 需要高性能物理引擎
+
+### 基于网格的布料模拟 Mesh-Based Cloth Simulation
+
+Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模拟；Render Mesh 的顶点位置由插值得到
+
+![](attachments/Pasted%20image%2020220630034201.png)
+
+绘制布料模拟约束 Paint Cloth Simulation Constraints：设定一些固定点，离身体近的地方自由度低，远的地方自由度高
+
+![](attachments/Pasted%20image%2020220630034311.png)
 
 ## 载具 Vehicle
 
