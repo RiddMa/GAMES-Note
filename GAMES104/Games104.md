@@ -1540,9 +1540,11 @@ TOI：距离障碍物越近，使用越细的步长进行物理模拟
 
 控制器推动物体 Controller Push Objects：碰撞胶囊体与环境物体碰撞时，由回调函数获取被碰撞物体信息（质量、是否能被推动），给被碰撞物体一个冲量使其运动
 
-Standing on Moving 
+站在移动中的物体上 Standing on Moving Object：为了获得稳定的效果不能使用物理引擎摩擦和碰撞解算。Controller 向脚下 Raycast 确定角色当前站立的位置是什么物体，若是移动物体，则将 Controller 的位置状态与移动物体绑定
 
 ## 布娃娃 Ragdoll
+
+Map Skeleton to Rigid Bodies
 
 ## 破坏 Destruction
 
