@@ -1536,6 +1536,12 @@ TOI：距离障碍物越近，使用越细的步长进行物理模拟
 
 坡度限制和强制滑坡 Slope Limits and Force Sliding Down：限制角色能行走并站定的最大坡度，超过阈值，角色处在坡上会向下滑
 
+控制器碰撞体积更新 Controller Volume Update：在角色切换姿态（走路、跑步、蹲下、匍匐等）更新碰撞胶囊体的大小
+
+控制器推动物体 Controller Push Objects：碰撞胶囊体与环境物体碰撞时，由回调函数获取被碰撞物体信息（质量、是否能被推动），给被碰撞物体一个冲量使其运动
+
+Standing on Moving 
+
 ## 布娃娃 Ragdoll
 
 ## 破坏 Destruction
