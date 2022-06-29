@@ -1609,6 +1609,12 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 ![](attachments/Pasted%20image%2020220630034311.png)
 
+设置布料物理材质 Set Cloth Physical Material：不同的摩擦力、顶点质量、弹性等等参数，模仿皮革、棉、麻、橡胶等不同材料制作的布料
+
+布料模拟器：质点 - 弹簧模型 Cloth Solver：Mass-Spring System
+
+![](attachments/Pasted%20image%2020220630034731.png)
+
 ## 载具 Vehicle
 
 ## 进阶：Advanced-PBD/XPBD
