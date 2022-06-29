@@ -1528,9 +1528,13 @@ TOI：距离障碍物越近，使用越细的步长进行物理模拟
 
 角色的形状：用两层胶囊体，外层稍大限制角色移动位置（防止第一人称摄像机穿墙等），内层贴近 Mesh 大小与物理系统进行碰撞
 
-自动滑步 Auto Slide：角色撞墙自动贴墙行走
+自动滑步 Auto Sliding：角色撞墙时贴墙行走
 
 ![](attachments/Pasted%20image%2020220630024859.png)
+
+自动上台阶 Auto Stepping：角色走到台阶前时自动将角色抬起
+
+坡度限制和强制滑坡 Slope Limits and Force Sliding Down：限制角色能行走并站定的最大坡度，超过阈值，角色处在坡上会向下滑
 
 ## 布娃娃 Ragdoll
 
