@@ -1556,11 +1556,11 @@ TOI：距离障碍物越近，使用越细的步长进行物理模拟
 
 ![](attachments/Pasted%20image%2020220630031030.png)
 
-动画与布娃娃的切换 Blending between Animation and Ragdoll：
+动画与布娃娃的切换 Blending between Animation and Ragdoll：一般在动画脱手的一帧切换到布娃娃，并给其施加一个冲量
 
 ![](attachments/Pasted%20image%2020220630031226.png)
 
-动画与布娃娃的结合 Powered Ragdoll：Physics-Animation Blending：
+动画与布娃娃的结合 Powered Ragdoll：Physics-Animation Blending：获得更为真实的效果
 
 ![](attachments/Pasted%20image%2020220630031422.png)
 
