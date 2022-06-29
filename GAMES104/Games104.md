@@ -1524,7 +1524,13 @@ TOI：距离障碍物越近，使用越细的步长进行物理模拟
 
 ## 角色控制器 Character Controller
 
+角色的类型：Kinematic Actor，无视物理规律
 
+角色的形状：用两层胶囊体，外层稍大限制角色移动位置（防止第一人称摄像机穿墙等），内层贴近 Mesh 大小与物理系统进行碰撞
+
+自动滑步 Auto Slide：角色撞墙自动贴墙行走
+
+![](attachments/Pasted%20image%2020220630024859.png)
 
 ## 布娃娃 Ragdoll
 
