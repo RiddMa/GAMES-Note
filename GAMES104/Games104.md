@@ -1552,7 +1552,17 @@ TOI：距离障碍物越近，使用越细的步长进行物理模拟
 
 ![](attachments/Pasted%20image%2020220630030615.png)
 
-使用布娃娃Animating Skeleton by Ragdoll
+使用布娃娃移动骨骼 Animating Skeleton by Ragdoll（动画重定向 Animation Retargeting）：用 Ragdoll 刚体碰撞计算得到的结果反向映射到骨骼上
+
+![](attachments/Pasted%20image%2020220630031030.png)
+
+动画与布娃娃的切换 Blending between Animation and Ragdoll：
+
+![](attachments/Pasted%20image%2020220630031226.png)
+
+动画与布娃娃的结合 Powered Ragdoll：Physics-Animation Blending：
+
+![](attachments/Pasted%20image%2020220630031422.png)
 
 ## 破坏 Destruction
 
