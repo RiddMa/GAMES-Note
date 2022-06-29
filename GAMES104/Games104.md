@@ -1544,7 +1544,15 @@ TOI：距离障碍物越近，使用越细的步长进行物理模拟
 
 ## 布娃娃 Ragdoll
 
-Map Skeleton to Rigid Bodies
+将骨骼映射到刚体 Map Skeleton to Rigid Bodies：用较少的刚体粗略表示主要骨骼的关系
+
+![](attachments/Pasted%20image%2020220630030525.png)
+
+骨骼关节约束 Human Joint Constraints：限制骨骼移动的自由度，符合真人效果（否则：人类一败涂地）
+
+![](attachments/Pasted%20image%2020220630030615.png)
+
+使用布娃娃Animating Skeleton by Ragdoll
 
 ## 破坏 Destruction
 
