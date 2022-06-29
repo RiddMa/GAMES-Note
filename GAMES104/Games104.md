@@ -1522,6 +1522,18 @@ TOI：距离障碍物越近，使用越细的步长进行物理模拟
 
 # 游戏引擎物理系统的高级应用
 
-## 
+## 角色控制器 Character Controller
+
+
+
+## 布娃娃 Ragdoll
+
+## 破坏 Destruction
+
+## 布料 Cloth
+
+## 载具 Vehicle
+
+## 进阶：Advanced-PBD/XPBD
 
 # 游戏引擎中的粒子和声效系统
