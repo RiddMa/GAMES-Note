@@ -1684,6 +1684,8 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 ![](attachments/Pasted%20image%2020220701022320.png)
 
+### 受力分析
+
 加速度的来源：牵引力 Traction Force
 
 ![](attachments/Pasted%20image%2020220701022429.png)
@@ -1695,6 +1697,16 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 轮胎的力 Tire Forces：
 
 ![](attachments/Pasted%20image%2020220701022858.png)
+
+### 重心
+
+![](attachments/Pasted%20image%2020220701023010.png)
+
+- 重心靠前：飞跃不稳定，容易前翻；容易转向不足
+- 重心靠后：飞跃比较稳定；容易转向过度 spin
+
+![](attachments/Pasted%20image%2020220701023449.png)
+
 
 ## 进阶：Advanced-PBD/XPBD
 
