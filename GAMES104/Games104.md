@@ -1615,7 +1615,7 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 ![](attachments/Pasted%20image%2020220630034731.png)
 
-![](attachments/Pasted%20image%2020220630132445.png)
+![](attachments/Pasted%20image%2020220630132955.png)
 
 ## 载具 Vehicle
 
