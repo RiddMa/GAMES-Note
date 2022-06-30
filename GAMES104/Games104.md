@@ -1656,11 +1656,14 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 ![](attachments/Pasted%20image%2020220630140501.png)
 
-在 3D 情况：使用 Delaunay 三角化 Delaunay Triangulation 方法切割空间生成 Mesh 碎片
+在 3D 情况：使用 Delaunay 三角化 Delaunay Triangulation 方法切割空间生成 Mesh 碎片，注意需要为切口创建新的纹理材质
 
 ![](attachments/Pasted%20image%2020220630140734.png)
-
 ![](attachments/Pasted%20image%2020220630140809.png)
+
+通过控制
+
+![](attachments/Pasted%20image%2020220630141305.png)
 
 ## 载具 Vehicle
 
