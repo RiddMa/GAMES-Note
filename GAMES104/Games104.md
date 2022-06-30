@@ -1611,7 +1611,7 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 设置布料物理材质 Set Cloth Physical Material：不同的摩擦力、顶点质量、弹性等等参数，模仿皮革、棉、麻、橡胶等不同材料制作的布料
 
-布料模拟器：质点 - 弹簧模型 Cloth Solver：Mass-Spring System
+### 布料模拟器：质点 - 弹簧模型 Cloth Solver：Mass-Spring System
 
 ![](attachments/Pasted%20image%2020220630034731.png)
 
@@ -1622,6 +1622,16 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 由于物理引擎中的速度也是由位移除以时间间隔得到，有时产生突变且需要除法运算。Verlet 代换使用稳定的位移和受力计算下一帧位移，防止跳变，且运算速度更快
 
 ![](attachments/Pasted%20image%2020220630133232.png)
+
+### 基于位置的动力学 Position Based Dynamics
+
+使用欧拉力学，解算约束得到位置，无需计算力和速度等
+
+![](attachments/Pasted%20image%2020220630134214.png)
+
+### 自碰撞 Self Collision
+
+
 
 ## 载具 Vehicle
 
