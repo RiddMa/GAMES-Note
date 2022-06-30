@@ -1564,8 +1564,6 @@ TOI：距离障碍物越近，使用越细的步长进行物理模拟
 
 ![](attachments/Pasted%20image%2020220630031422.png)
 
-## 破坏 Destruction
-
 ## 布料 Cloth
 
 ### 基于动画的布料模拟 Animation-Based Cloth Simulation
@@ -1634,6 +1632,16 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 ![](attachments/Pasted%20image%2020220630134612.png)
 
 ![](attachments/Pasted%20image%2020220630134628.png)
+
+## 破坏 Destruction
+
+分块层级Chunk Hierarchy：将 Mesh 划分子块，组织成树状结构
+
+![](attachments/Pasted%20image%2020220630135145.png)
+
+连接图Connectivity Graph：表达最细层级的分块之间连接的图结构，一个结点
+
+![](attachments/Pasted%20image%2020220630135407.png)
 
 ## 载具 Vehicle
 
