@@ -1643,11 +1643,19 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 ![](attachments/Pasted%20image%2020220630135407.png)
 
-伤害计算Damage Calculation：Impulse
+伤害计算 Damage Calculation：碰撞或其他事件产生的冲击 Impulse 超过物理材料设定的阈值，则产生破坏，将结点和相连的边从连接图中移除，结点代表的分块开始由物理引擎接管解算（一个非常 Hack 的表达，王希不满。希望未来有更 Physics Driven 的方法）
 
 ![](attachments/Pasted%20image%2020220630135654.png)
 ![](attachments/Pasted%20image%2020220630135749.png)
+
+支撑图 Support Graph：表达可破坏物体与世界物体固定连接的关系
+
 ![](attachments/Pasted%20image%2020220630135944.png)
+
+使用 Voronoi 图构建分块：
+
+![](attachments/Pasted%20image%2020220630140501.png)
+
 ## 载具 Vehicle
 
 ## 进阶：Advanced-PBD/XPBD
