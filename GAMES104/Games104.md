@@ -1661,9 +1661,13 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 ![](attachments/Pasted%20image%2020220630140734.png)
 ![](attachments/Pasted%20image%2020220630140809.png)
 
-通过控制
+通过控制 Voronoi 种子点的位置，可以生成各种模式的碎片形状
 
 ![](attachments/Pasted%20image%2020220630141305.png)
+
+
+
+![](attachments/Pasted%20image%2020220701021310.png)
 
 ## 载具 Vehicle
 
