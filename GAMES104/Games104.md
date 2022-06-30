@@ -1617,6 +1617,10 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 ![](attachments/Pasted%20image%2020220630132955.png)
 
+使用半隐式欧拉积分推导而来的Verlet积分方法，代换消去速度变量，只需要当前位置$\vec{x}(t)$、上一帧位置$\vec{x}(t-\Delta t)$、当前加速度$\vec{a}(t)$（由质点当前受力与质量通过牛二计算），即可得到下一帧位置
+
+![](attachments/Pasted%20image%2020220630133232.png)
+
 ## 载具 Vehicle
 
 ## 进阶：Advanced-PBD/XPBD
