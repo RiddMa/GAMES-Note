@@ -1684,9 +1684,17 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 ![](attachments/Pasted%20image%2020220701022320.png)
 
-加速度的来源：Traction Force
+加速度的来源：牵引力 Traction Force
 
 ![](attachments/Pasted%20image%2020220701022429.png)
+
+支撑车体 Suspension Force：
+
+![](attachments/Pasted%20image%2020220701022718.png)
+
+轮胎的力 Tire Forces：
+
+![](attachments/Pasted%20image%2020220701022858.png)
 
 ## 进阶：Advanced-PBD/XPBD
 
