@@ -1635,14 +1635,19 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 ## 破坏 Destruction
 
-分块层级Chunk Hierarchy：将 Mesh 划分子块，组织成树状结构
+分块层级 Chunk Hierarchy：将 Mesh 划分子块，组织成树状结构
 
 ![](attachments/Pasted%20image%2020220630135145.png)
 
-连接图Connectivity Graph：表达最细层级的分块之间连接的图结构，一个结点
+连接图 Connectivity Graph：表达最细层级的分块之间连接的图结构，一个结点表示一个分块，一条边表示
 
 ![](attachments/Pasted%20image%2020220630135407.png)
 
+伤害计算Damage Calculation：Impulse
+
+![](attachments/Pasted%20image%2020220630135654.png)
+![](attachments/Pasted%20image%2020220630135749.png)
+![](attachments/Pasted%20image%2020220630135944.png)
 ## 载具 Vehicle
 
 ## 进阶：Advanced-PBD/XPBD
