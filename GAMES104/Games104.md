@@ -1631,7 +1631,9 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 ### 自碰撞 Self Collision
 
+![](attachments/Pasted%20image%2020220630134612.png)
 
+![](attachments/Pasted%20image%2020220630134628.png)
 
 ## 载具 Vehicle
 
