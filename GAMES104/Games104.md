@@ -1702,11 +1702,10 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 ![](attachments/Pasted%20image%2020220701023010.png)
 
-- 重心靠前：飞跃不稳定，容易前翻；容易转向不足
-- 重心靠后：飞跃比较稳定；容易转向过度 spin
+- 重心靠前：飞跃不稳定，容易前翻 dive；容易转向不足 understeer
+- 重心靠后：飞跃比较稳定；容易转向过度 oversteer
 
 ![](attachments/Pasted%20image%2020220701023449.png)
-
 
 ## 进阶：Advanced-PBD/XPBD
 
