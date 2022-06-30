@@ -1665,9 +1665,16 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 ![](attachments/Pasted%20image%2020220630141305.png)
 
-
+碰撞 - 破坏的流程：
 
 ![](attachments/Pasted%20image%2020220701021310.png)
+
+除此之外：
+- 声效
+- 粒子效果
+- 更新 NavMesh
+
+
 
 ## 载具 Vehicle
 
