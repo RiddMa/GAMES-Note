@@ -1674,9 +1674,19 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 - 粒子效果
 - 更新 NavMesh
 
-
+破坏系统仍存在的许多问题：
+- 性能不够用（再多 2-3 数量级依然可以消耗掉）
+- 艺术家控制程度低
 
 ## 载具 Vehicle
+
+### 载具原理建模 Vehicle Mechanism Modeling
+
+![](attachments/Pasted%20image%2020220701022320.png)
+
+加速度的来源：Traction Force
+
+![](attachments/Pasted%20image%2020220701022429.png)
 
 ## 进阶：Advanced-PBD/XPBD
 
