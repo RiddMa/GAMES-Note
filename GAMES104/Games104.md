@@ -1705,10 +1705,20 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 - 重心靠前：飞跃不稳定，容易前翻 dive；容易转向不足 understeer
 - 重心靠后：飞跃比较稳定；容易转向过度 oversteer
 
+加速/减速时的重心转移：由车身质量和悬挂硬度决定，影响轮胎最大抓地力
+
 ![](attachments/Pasted%20image%2020220701023449.png)
 
-其他：
+其他：空气阻力、轮胎接触面，等等……
 
 ## 进阶：Advanced-PBD/XPBD
+
+拉格朗日力学：使用位置 - 约束求解速度
+
+![](attachments/Pasted%20image%2020220701150813.png)
+
+### 圆周运动约束 Circling Constraint
+
+![](attachments/Pasted%20image%2020220701150945.png)
 
 # 游戏引擎中的粒子和声效系统
