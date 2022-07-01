@@ -1727,14 +1727,13 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 （摆烂了）
 
-- 先对位移后的约束作泰勒展开，并且只保留一阶项，舍弃全部高阶项，并假定位移后的约束方程仍然成立（等于0）
-- 
-
+- 先对位移后的约束作泰勒展开，并且只保留一阶项，舍弃全部高阶项，并假定位移后的约束方程仍然成立（等于 0）
+- 位移量 $\Delta X$则是由步长 $\lambda$乘以当前位置的最优方向得到的
 
 ![](attachments/Pasted%20image%2020220701152332.png)
 ![](attachments/Pasted%20image%2020220701153015.png)
 
-### PBD伪代码
+### PBD 伪代码
 
 ![](attachments/Pasted%20image%2020220701153745.png)
 
