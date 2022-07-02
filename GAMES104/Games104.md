@@ -1711,7 +1711,7 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 其他：空气阻力、轮胎接触面，等等……
 
-## 进阶：Advanced-PBD/XPBD
+## 进阶：PBD/XPBD
 
 拉格朗日力学：使用位置 - 约束求解速度
 
@@ -1743,8 +1743,16 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 ![](attachments/Pasted%20image%2020220701153745.png)
 
-### PBD的优点
+### PBD 的优缺点
 
 - 收敛很快，因此运算速度高
+- 基于位置而非速度，迭代稳定
+- 难以控制约束的优先级（优先保证碰撞约束而非运动约束）
+
+PBD 广泛用于布料与流体模拟
+
+### 扩展的 PBD - XPBD（Extended PBD）
+
+![](attachments/Pasted%20image%2020220703004752.png)
 
 # 游戏引擎中的粒子和声效系统
