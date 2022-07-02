@@ -1711,7 +1711,7 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 
 其他：空气阻力、轮胎接触面，等等……
 
-## 进阶：PBD/XPBD
+## 进阶：PBD（Position Based Dynamics）
 
 拉格朗日力学：使用位置 - 约束求解速度
 
@@ -1752,6 +1752,8 @@ Render Mesh -> Physical Mesh：创建简化的 Physical Mesh，用于物理模�
 PBD 广泛用于布料与流体模拟
 
 ### 扩展的 PBD - XPBD（Extended PBD）
+
+增加 Stiffness 参数
 
 ![](attachments/Pasted%20image%2020220703004752.png)
 
