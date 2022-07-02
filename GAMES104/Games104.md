@@ -1753,8 +1753,16 @@ PBD 广泛用于布料与流体模拟
 
 ### 扩展的 PBD - XPBD（Extended PBD）
 
-增加 Stiffness 参数
+增加 Stiffness 参数，实现约束的优先级
 
 ![](attachments/Pasted%20image%2020220703004752.png)
+
+## 参考资料 Reference
+
+![](attachments/Pasted%20image%2020220703010019.png)
+![](attachments/Pasted%20image%2020220703010027.png)
+![](attachments/Pasted%20image%2020220703010041.png)
+![](attachments/Pasted%20image%2020220703010052.png)
+![](attachments/Pasted%20image%2020220703010104.png)
 
 # 游戏引擎中的粒子和声效系统
