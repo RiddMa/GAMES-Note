@@ -2,9 +2,9 @@
 
 Ridd 的 GAMES 课程笔记
 
-- Games101：暂缺
-- [Games104](GAMES104/Games104.md)：进行中
-- [Games202](GAMES202/Games202.md)：未开始
+- GAMES101：暂缺
+- [GAMES104](GAMES104/README.md)：进行中
+- [GAMES202](GAMES202/Games202.md)：未开始
 
 <!---
 > [!info] 介绍
